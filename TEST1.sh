@@ -10,6 +10,7 @@ LOC=
 # NOTE the & at the end of the command to run it in the background
 dumpcap -i ens160 -w "${LOC}/LOG_${UNIXTIME}.pcapng" &
 
+#Short pause so dumpcap can start capturing packets.
 sleep 5
 
 #Start the ipsec tunnel between VM1 and VM2
