@@ -30,7 +30,7 @@ killall dumpcap
 chmod 777 ../../../../"${LOGNAME}"
 
 su uah
-
+#This is move command is not working
 sudo mv ~/../../../../"${LOGNAME}" ~/LOGS/
 
 
