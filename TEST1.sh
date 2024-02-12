@@ -3,12 +3,13 @@
 
 UNIXTIME=$(date +%s)
 LOC=
+LOGNAME="${LOC}/TEST1_${UNIXTIME}.pcapng"
 
 
 #Use dumpcap to capture packets on the interface ins160 
 # and write the output to a file called ins160.pcap
 # NOTE the & at the end of the command to run it in the background
-dumpcap -i ens160 -w "${LOC}/LOG_${UNIXTIME}.pcapng" &
+dumpcap -i ens160 -w "${LOGNAME}" &
 
 #Short pause so dumpcap can start capturing packets.
 sleep 5
@@ -26,6 +27,10 @@ ipsec down VM1-VM2
 #Stop the dumpcap process
 killall dumpcap
 
-mv ../../../../"${LOC}LOG_${UNIXTIME}.pcapng" LOGS/
-chmod 777 LOGS/"${LOC}LOG_${UNIXTIME}.pcapng"
+chmod 777 ../../../../"${LOGNAME}"
+
+su uah
+
+sudo mv ~/../../../../"${LOGNAME}" ~/LOGS/
+
 
