@@ -26,6 +26,6 @@ ipsec down VM1-VM2
 #Stop the dumpcap process
 killall dumpcap
 
-mv ../../../../"${LOC}/LOG_${UNIXTIME}.pcapng" LOGS/
-chmod 777 LOGS/"${LOC}/LOG_${UNIXTIME}.pcapng"
+mv ../../../../"${LOC}LOG_${UNIXTIME}.pcapng" LOGS/
+chmod 777 LOGS/"${LOC}LOG_${UNIXTIME}.pcapng"
 
