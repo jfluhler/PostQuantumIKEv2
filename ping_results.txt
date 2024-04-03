@@ -1,0 +1,851 @@
+04/02/24,	17:24:22:454188544
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.051 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.067 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.071 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.043 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9199ms
+rtt min/avg/max/mdev = 0.039/0.048/0.071/0.011 ms
+
+04/02/24,	17:24:31:743878953
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.031 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.049 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9201ms
+rtt min/avg/max/mdev = 0.031/0.042/0.049/0.004 ms
+
+04/02/24,	17:25:01:925372786
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.051 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.036 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.036 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.043 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9194ms
+rtt min/avg/max/mdev = 0.036/0.041/0.051/0.004 ms
+
+04/02/24,	17:25:11:232261927
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.031 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.035 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.036 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.034 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.034 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.039 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.036 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.042 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9220ms
+rtt min/avg/max/mdev = 0.031/0.037/0.043/0.004 ms
+
+04/02/24,	17:25:41:378250538
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.057 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.067 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.060 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.041 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9212ms
+rtt min/avg/max/mdev = 0.038/0.048/0.067/0.009 ms
+
+04/02/24,	17:25:50:687864385
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.036 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.037 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.069 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.035 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.039 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.041 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9201ms
+rtt min/avg/max/mdev = 0.035/0.042/0.069/0.009 ms
+
+04/02/24,	17:53:07:391115771
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.080 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.066 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.037 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.037 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.041 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9209ms
+rtt min/avg/max/mdev = 0.037/0.047/0.080/0.013 ms
+
+04/02/24,	17:53:16:707777446
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.055 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.041 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9206ms
+rtt min/avg/max/mdev = 0.040/0.043/0.055/0.004 ms
+
+04/02/24,	17:53:46:871171297
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.084 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.041 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9223ms
+rtt min/avg/max/mdev = 0.039/0.047/0.084/0.012 ms
+
+04/02/24,	17:53:56:193387183
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.044 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9208ms
+rtt min/avg/max/mdev = 0.040/0.043/0.047/0.002 ms
+
+04/02/24,	18:41:41:635887610
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.059 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.048 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.036 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.041 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9216ms
+rtt min/avg/max/mdev = 0.036/0.044/0.059/0.005 ms
+
+04/02/24,	18:41:50:945321672
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.037 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9218ms
+rtt min/avg/max/mdev = 0.037/0.042/0.045/0.002 ms
+
+04/02/24,	18:42:21:153143665
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.057 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.060 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.050 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.042 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9197ms
+rtt min/avg/max/mdev = 0.038/0.046/0.060/0.006 ms
+
+04/02/24,	18:42:30:464028084
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.048 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.049 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9204ms
+rtt min/avg/max/mdev = 0.040/0.044/0.049/0.002 ms
+
+04/02/24,	18:43:00:631217318
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.057 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.070 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.044 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9218ms
+rtt min/avg/max/mdev = 0.038/0.046/0.070/0.009 ms
+
+04/02/24,	18:43:09:952659315
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.033 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.050 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.061 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.048 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9214ms
+rtt min/avg/max/mdev = 0.033/0.044/0.061/0.007 ms
+
+04/02/24,	18:43:55:250170658
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.048 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.065 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.056 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.033 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.039 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9195ms
+rtt min/avg/max/mdev = 0.033/0.045/0.065/0.008 ms
+
+04/02/24,	18:44:04:544981511
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.034 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9204ms
+rtt min/avg/max/mdev = 0.034/0.042/0.045/0.003 ms
+
+04/02/24,	18:44:34:686242266
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.048 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.036 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.063 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9208ms
+rtt min/avg/max/mdev = 0.036/0.044/0.063/0.007 ms
+
+04/02/24,	18:44:44:000560619
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.033 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.037 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.033 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.036 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9203ms
+rtt min/avg/max/mdev = 0.033/0.039/0.046/0.004 ms
+
+04/02/24,	18:45:14:137707864
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.054 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.072 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.043 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9193ms
+rtt min/avg/max/mdev = 0.038/0.047/0.072/0.009 ms
+
+04/02/24,	18:45:23:462052787
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.035 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.066 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.073 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.066 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9197ms
+rtt min/avg/max/mdev = 0.035/0.051/0.073/0.011 ms
+
+04/02/24,	18:45:53:664959925
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.051 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.043 ms
+^C
+--- carol ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 0.043/0.047/0.051/0.004 ms
+
+04/02/24,	18:45:55:564621262
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.045 ms
+^C
+--- moon ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 0.041/0.043/0.045/0.002 ms
+
+04/02/24,	18:45:57:367069283
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.035 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.040 ms
+^C
+--- carol ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 0.035/0.037/0.040/0.002 ms
+
+04/02/24,	18:45:59:129330759
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.037 ms
+^C
+--- moon ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.037/0.037/0.037/0.000 ms
+
+04/02/24,	18:52:24:574852613
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.053 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.053 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.072 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.044 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9211ms
+rtt min/avg/max/mdev = 0.040/0.047/0.072/0.009 ms
+
+04/02/24,	18:52:33:888192853
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.035 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.066 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.059 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.083 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.047 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9209ms
+rtt min/avg/max/mdev = 0.035/0.051/0.083/0.013 ms
+
+04/02/24,	18:53:04:024459184
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.056 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.037 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.035 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.072 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.046 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9225ms
+rtt min/avg/max/mdev = 0.035/0.046/0.072/0.010 ms
+
+04/02/24,	18:53:13:348048559
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.035 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.039 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.048 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.049 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.046 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9219ms
+rtt min/avg/max/mdev = 0.035/0.043/0.049/0.004 ms
+
+04/02/24,	18:53:43:564160654
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.052 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.035 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.046 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9215ms
+rtt min/avg/max/mdev = 0.035/0.043/0.052/0.004 ms
+
+04/02/24,	18:53:52:896666073
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.061 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.047 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9217ms
+rtt min/avg/max/mdev = 0.042/0.045/0.061/0.005 ms
+
+04/02/24,	18:54:23:743407041
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.057 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.061 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.037 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.036 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.032 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.062 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.047 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9227ms
+rtt min/avg/max/mdev = 0.032/0.045/0.062/0.010 ms
+
+04/02/24,	18:54:33:060210597
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.034 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.047 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9213ms
+rtt min/avg/max/mdev = 0.034/0.043/0.047/0.003 ms
+
+04/02/24,	18:55:03:272705365
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.063 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.054 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.049 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.040 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9214ms
+rtt min/avg/max/mdev = 0.038/0.044/0.063/0.007 ms
+
+04/02/24,	18:55:12:608086964
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.038 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.038 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.039 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9210ms
+rtt min/avg/max/mdev = 0.038/0.043/0.047/0.003 ms
+
+04/02/24,	19:07:18:490713724
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.065 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.033 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.033 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.046 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9214ms
+rtt min/avg/max/mdev = 0.033/0.043/0.065/0.008 ms
+
+04/02/24,	19:07:27:807959907
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.034 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.035 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.048 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.036 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9202ms
+rtt min/avg/max/mdev = 0.034/0.040/0.048/0.004 ms
+
+04/02/24,	19:07:57:993693725
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.053 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.036 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.036 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9195ms
+rtt min/avg/max/mdev = 0.036/0.041/0.053/0.004 ms
+
+04/02/24,	19:08:07:296066035
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.034 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.039 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.040 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.043 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9216ms
+rtt min/avg/max/mdev = 0.034/0.041/0.046/0.003 ms
+
+04/02/24,	19:08:37:462325088
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.055 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.035 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.032 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.037 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.029 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.035 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.036 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9198ms
+rtt min/avg/max/mdev = 0.029/0.038/0.055/0.007 ms
+
+04/02/24,	19:08:46:758964595
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.037 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.038 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.052 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.054 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9222ms
+rtt min/avg/max/mdev = 0.037/0.044/0.054/0.005 ms
+
+04/02/24,	19:09:16:988970383
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.052 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.047 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.064 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9202ms
+rtt min/avg/max/mdev = 0.039/0.047/0.064/0.006 ms
+
+04/02/24,	19:09:26:303896285
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.037 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.051 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.064 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.051 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.067 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.066 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.049 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9200ms
+rtt min/avg/max/mdev = 0.037/0.052/0.067/0.009 ms
+
+04/02/24,	19:09:56:547262085
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.058 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.045 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.043 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9199ms
+rtt min/avg/max/mdev = 0.040/0.044/0.058/0.004 ms
+
+04/02/24,	19:10:05:856410598
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.033 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.072 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.064 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.038 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.046 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.045 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9198ms
+rtt min/avg/max/mdev = 0.033/0.047/0.072/0.011 ms
+
+04/02/24,	19:12:25:946223382
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.055 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.042 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.040 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9218ms
+rtt min/avg/max/mdev = 0.038/0.042/0.055/0.004 ms
+
+04/02/24,	19:12:35:264632324
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.047 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.041 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9215ms
+rtt min/avg/max/mdev = 0.041/0.043/0.047/0.002 ms
+
+04/02/24,	19:13:05:406224365
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.052 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.035 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.040 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.046 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.043 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.049 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.063 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.067 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.042 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9220ms
+rtt min/avg/max/mdev = 0.035/0.047/0.067/0.010 ms
+
+04/02/24,	19:13:14:725159017
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.033 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.045 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.085 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.044 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9198ms
+rtt min/avg/max/mdev = 0.033/0.046/0.085/0.013 ms
+
+04/02/24,	19:13:44:871617376
+PING carol (192.168.0.3) 56(84) bytes of data.
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=1 ttl=64 time=0.055 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=2 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=3 ttl=64 time=0.041 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=4 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=5 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=6 ttl=64 time=0.051 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=7 ttl=64 time=0.038 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=8 ttl=64 time=0.044 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=9 ttl=64 time=0.039 ms
+64 bytes from carol.pq-strongswan_internet (192.168.0.3): icmp_seq=10 ttl=64 time=0.047 ms
+
+--- carol ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9197ms
+rtt min/avg/max/mdev = 0.038/0.043/0.055/0.005 ms
+
+04/02/24,	19:13:54:176352294
+PING moon (192.168.0.2) 56(84) bytes of data.
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=1 ttl=64 time=0.035 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=2 ttl=64 time=0.043 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=3 ttl=64 time=0.066 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=4 ttl=64 time=0.048 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=5 ttl=64 time=0.044 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=6 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=7 ttl=64 time=0.041 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=8 ttl=64 time=0.072 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=9 ttl=64 time=0.042 ms
+64 bytes from moon.pq-strongswan_internet (192.168.0.2): icmp_seq=10 ttl=64 time=0.043 ms
+
+--- moon ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9211ms
+rtt min/avg/max/mdev = 0.035/0.047/0.072/0.011 ms
+

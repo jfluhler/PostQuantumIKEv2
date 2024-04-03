@@ -1,0 +1,386 @@
+04/02/24,	17:24:21:965549980
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	17:24:41:056992323
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	17:25:01:470574991
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	17:25:20:543839860
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	17:25:40:926977527
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	17:26:00:000658322
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	17:52:59:572500806
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	17:53:26:015371749
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	17:53:46:409921397
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	17:54:05:504809479
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+04/02/24,	18:41:23:754320116
+ Container moon  Running
+ Container carol  Running
+Started containers.
+
+04/02/24,	18:42:00:292882017
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:42:20:701117869
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:42:39:776678738
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:43:00:179703929
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:43:19:264200940
+ Container carol  Stopping
+04/02/24,	18:43:50:871709958
+ Container moon  Running
+ Container carol  Created
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:44:13:858407100
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:44:34:250263231
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:44:53:312199864
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:45:13:670313641
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:45:32:768160379
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:45:53:200761092
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:45:57:231302956
+Stopped containers.
+
+04/02/24,	18:45:57:291004398
+ Container moon  Running
+ Container carol  Running
+Started containers.
+
+04/02/24,	18:45:59:316938920
+ Container carol  Stopping
+ Container carol  Error while Stopping
+canceled
+Stopped containers.
+
+04/02/24,	18:52:24:320771226
+ Container moon  Running
+ Container carol  Created
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:52:43:200910324
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:53:03:575516482
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:53:22:661403985
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:53:43:099338399
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:54:02:212839067
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:54:23:325275106
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:54:42:400539005
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	18:55:02:810620679
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	18:55:21:920106402
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	19:07:18:024023430
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	19:07:37:119613710
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	19:07:57:544662301
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	19:08:16:612286048
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	19:08:37:026487986
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	19:08:56:099883331
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	19:09:16:534483024
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	19:09:35:631195274
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	19:09:56:060821812
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	19:10:15:172626632
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	19:12:25:479439491
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	19:12:44:576620840
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	19:13:04:986329465
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	19:13:24:032466021
+ Container carol  Stopping
+ Container carol  Stopped
+ Container moon  Stopping
+ Container moon  Stopped
+Stopped containers.
+
+04/02/24,	19:13:44:415837473
+ Container moon  Created
+ Container carol  Created
+ Container moon  Starting
+ Container moon  Started
+ Container carol  Starting
+ Container carol  Started
+Started containers.
+
+04/02/24,	19:14:03:488545109
+ Container carol  Stopping
