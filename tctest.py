@@ -3,11 +3,6 @@ import subprocess
 import shlex
 import tcconfig
 
-def tc_add(interface, constraint1, Cvalue1):
-
-
-
-
 # Example tc command to invoke a delay of 200ms
 SetCon = "tc qdisc add dev ens160 root netem delay 200ms"
 
