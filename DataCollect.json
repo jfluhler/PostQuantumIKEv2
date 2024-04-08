@@ -1,43 +1,45 @@
 {
     "CoreConfig":{
-        "TC_Interations": 1000,
+        "TC_Interations": 1,
         "LocalPath": "/",
         "RemotePath": "/var/log/charon.log",
         "WiresharkLogs": true,
         "WSRemotePath": "/var/log/",
-        "WSLocalPath": "/"
+        "WSLocalPath": "/",
+        "MirrorMoon": false,
+        "PrintLevel": 1,
+        "compose_files": "./strongX509/pq-strongswan/docker-compose.yml"
     },
     "Carol_TC_Config": {
         "Constraint1": {
-            "type": "netem",
+            "Type": "netem",
             "Constraint": "delay",
             "Interface": "eth0",
-            "StartRange": "200",
-            "EndRange": "1000",
-            "units": "ms",
-            "stepsize": "1",
+            "StartRange": 1,
+            "EndRange": 200,
+            "Units": "ms",
+            "Steps": 2,
             "AddParams": ""
         },
         "Constraint2": {
-            "type": "netem",
+            "Type": "netem",
             "Constraint": "loss",
             "Interface": "eth0",
-            "StartRange": "0.1",
-            "EndRange": "10",
-            "units": "%",
-            "stepsize": "1",
+            "StartRange": 0.1,
+            "Units": "%",
+            "Steps": 1,
             "AddParams": ""
         }
     },
     "Moon_TC_Config": {
         "Constraint1": {
-            "type": "netem",
+            "Type": "netem",
             "Constraint": "delay",
             "Interface": "eth0",
-            "StartRange": "200",
-            "EndRange": "1000",
-            "units": "ms",
-            "stepsize": "1",
+            "StartRange": 1,
+            "EndRange": 1000,
+            "Units": "ms",
+            "Steps": 1,
             "AddParams": ""
         }
     }
