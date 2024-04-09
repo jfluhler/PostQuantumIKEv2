@@ -1,6 +1,6 @@
 {
     "CoreConfig":{
-        "TC_Interations": 1,
+        "TC_Interations": 10,
         "MaxTimeS": 3600,
         "LocalPath": "/",
         "RemotePath": "/var/log/charon.log",
@@ -19,28 +19,7 @@
             "StartRange": 1,
             "EndRange": 200,
             "Units": "ms",
-            "Steps": 2,
-            "AddParams": ""
-        },
-        "Constraint2": {
-            "Type": "netem",
-            "Constraint": "loss",
-            "Interface": "eth0",
-            "StartRange": 0.1,
-            "Units": "%",
-            "Steps": 1,
-            "AddParams": ""
-        }
-    },
-    "Moon_TC_Config": {
-        "Constraint1": {
-            "Type": "netem",
-            "Constraint": "delay",
-            "Interface": "eth0",
-            "StartRange": 1,
-            "EndRange": 1000,
-            "Units": "ms",
-            "Steps": 1,
+            "Steps": 5,
             "AddParams": ""
         }
     }

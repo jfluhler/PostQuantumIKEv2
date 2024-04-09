@@ -10,14 +10,11 @@ import numpy as np
 from python_on_whales import DockerClient
 from tqdm import trange
 
-
-max_run_time = 3600
-
-
+ConfigFile = "DataCollect_bandwidth.json"
 
 ## IMPORT CONFIGURATION FILE
 # Open the JSON file
-with open('PostQuantumIKEv2/DataCollect.json') as file:
+with open('PostQuantumIKEv2/' + ConfigFile) as file:
     JSONConfig = json.load(file)
 
 # Breakup the JSON file into different dictionaries
@@ -36,20 +33,30 @@ if pLvl > 0:
     # Because the Carol and Moon dictionaries are nested, 
     #  we need to loop through the top level and the nested levels to print
     print("\n\nCAROL CONFIG")
-    for x, obj in CarolConfig.items():
-        print("\t" + x)
+    if bool(CarolConfig):
+        for x, obj in CarolConfig.items():
+            print("\t" + x)
 
-        for y in obj:
-            print("\t\t" + y + ':', obj[y])
+            for y in obj:
+                print("\t\t" + y + ':', obj[y])
 
     print("\n\nMOON CONFIG")
-    for x, obj in MoonConfig.items():
-        print("\t" + x)
+    if bool(MoonConfig):
+        for x, obj in MoonConfig.items():
+            print("\t" + x)
 
-        for y in obj:
-            print("\t\t" + y + ':', obj[y])
+            for y in obj:
+                print("\t\t" + y + ':', obj[y])
 
+# Define the maximum run time
+if bool(CoreConfig['MaxTimeS']):
+    max_run_time = CoreConfig['MaxTimeS']
+else:
+    max_run_time = 3600
 
+print("Max Run Time: " + str(max_run_time/60) + " minutes")
+
+# Define the Docker Client
 docker = DockerClient(compose_files=CoreConfig['compose_files'])
 docker.compose.ps()
 
@@ -122,6 +129,10 @@ if True == True:
             if pLvl > 1:
                 print("Carol Starter Adjustable Constraint: " + tc_string)
             docker.execute("carol", shlex.split(tc_string))
+
+            if CoreConfig['MirrorMoon'] == True:
+                docker.execute("moon", shlex.split(tc_string))
+
         else:
             tmp_ctype = obj['Type']
             tmp_constraint = obj['Constraint']
@@ -151,58 +162,63 @@ if True == True:
                     tmp_constraint + " " + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
             if pLvl > 1:
                 print("Carol Starter Constraint: " + tc_string)
+
             docker.execute("carol", shlex.split(tc_string))
+
+            if CoreConfig['MirrorMoon'] == True:
+                docker.execute("moon", shlex.split(tc_string))
             
 
     # Access Moon and add starting TC Constrains
-    for x, obj in MoonConfig.items():
-        if x == 'Constraint1':
-            M_ctype = obj['Type']
-            M_constraint = obj['Constraint']
-            M_interface = obj['Interface']
-            M_Min = obj['StartRange']
-            M_Max = obj['EndRange']
-            M_units = obj['Units']
-            M_steps = obj['Steps']
-            M_AddParams = obj['AddParams']
+    if bool(MoonConfig):
+        for x, obj in MoonConfig.items():
+            if x == 'Constraint1':
+                M_ctype = obj['Type']
+                M_constraint = obj['Constraint']
+                M_interface = obj['Interface']
+                M_Min = obj['StartRange']
+                M_Max = obj['EndRange']
+                M_units = obj['Units']
+                M_steps = obj['Steps']
+                M_AddParams = obj['AddParams']
 
-            tc_string = ("tc qdisc add dev " + M_interface + " root " + M_ctype + " " +  
-                M_constraint + " " + str(M_Min) + M_units + " " + M_AddParams)
-
-            if pLvl > 1:
-                print("Moon Starter Adjustable Constraint: " + tc_string)
-            docker.execute("moon", shlex.split(tc_string))
-        else:
-            tmp_ctype = obj['Type']
-            tmp_constraint = obj['Constraint']
-            tmp_interface = obj['Interface']
-            tmp_Min = obj['StartRange']
-            tmp_units = obj['Units']
-            tmp_AddParams = obj['AddParams']
-
-            if tmp_ctype == M_ctype:
-                # If the constraint type is the same then we need to tack on the additional constraints
-                # forexample if we are using netem on both constraints EG delay and loss
-                # then we cannot add both, so we combine them into one command and update AddParams with the 
-                # additional constraints. Then we need replace the previous constraint
-                # tc qdisc replace dev eth0 root netem delay 200ms loss 10%
-                # but really the perefered placement would be the the AddParams field.
-
-                M_AddParams = (M_AddParams + " " + tmp_constraint + " "  + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
+                tc_string = ("tc qdisc add dev " + M_interface + " root " + M_ctype + " " +  
+                    M_constraint + " " + str(M_Min) + M_units + " " + M_AddParams)
 
                 if pLvl > 1:
-                    print("Warning: New Constraint Type is the same as the adjustable constraint:" + tmp_ctype)
-
-                tc_string = ("tc qdisc " + "replace" + " dev " + M_interface + " root " + M_ctype + " " +  
-                    M_constraint + " " + str(M_Min) + M_units + " " + M_AddParams)
+                    print("Moon Starter Adjustable Constraint: " + tc_string)
+                docker.execute("moon", shlex.split(tc_string))
             else:
-                tc_string = ("tc qdisc add dev " + tmp_interface + " root " + tmp_ctype + " " + 
-                    tmp_constraint + " " + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
+                tmp_ctype = obj['Type']
+                tmp_constraint = obj['Constraint']
+                tmp_interface = obj['Interface']
+                tmp_Min = obj['StartRange']
+                tmp_units = obj['Units']
+                tmp_AddParams = obj['AddParams']
 
-            if pLvl > 1:
-                    print("Moon Starter Constraint: " + tc_string)
+                if tmp_ctype == M_ctype:
+                    # If the constraint type is the same then we need to tack on the additional constraints
+                    # forexample if we are using netem on both constraints EG delay and loss
+                    # then we cannot add both, so we combine them into one command and update AddParams with the 
+                    # additional constraints. Then we need replace the previous constraint
+                    # tc qdisc replace dev eth0 root netem delay 200ms loss 10%
+                    # but really the perefered placement would be the the AddParams field.
 
-            docker.execute("moon", shlex.split(tc_string))
+                    M_AddParams = (M_AddParams + " " + tmp_constraint + " "  + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
+
+                    if pLvl > 1:
+                        print("Warning: New Constraint Type is the same as the adjustable constraint:" + tmp_ctype)
+
+                    tc_string = ("tc qdisc " + "replace" + " dev " + M_interface + " root " + M_ctype + " " +  
+                        M_constraint + " " + str(M_Min) + M_units + " " + M_AddParams)
+                else:
+                    tc_string = ("tc qdisc add dev " + tmp_interface + " root " + tmp_ctype + " " + 
+                        tmp_constraint + " " + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
+
+                if pLvl > 1:
+                        print("Moon Starter Constraint: " + tc_string)
+
+                docker.execute("moon", shlex.split(tc_string))
 
 time.sleep(1)
 
@@ -250,21 +266,26 @@ for i in trange(len(C_vals)):
     # START Single Constraint Function
     # IPSEC LOOP N TIMES
     ipsec_N = CoreConfig['TC_Interations']
-    if pLvl > 0:
+    if pLvl > 1:
         print(" -- Begin IPSec Loop -- ")
     for j in trange(ipsec_N):
         # Initiate IPSEC Connection
         if pLvl > 3:
             print("swanctl --initiate --child net")
-        docker.execute("carol", shlex.split("swanctl --initiate --child net"))
+        
+        try:
+            docker.execute("carol", shlex.split("swanctl --initiate --child net"))
 
-        # Send data file
-        docker.execute("carol", shlex.split("ping -c 5 strongswan.moon.com"))
+            # Send data file
+            docker.execute("carol", shlex.split("ping -c 5 strongswan.moon.com"))
 
-        # Deactivate IPSEC Connection
-        if pLvl > 3:
-            print("swanctl --terminate --ike home")
-        docker.execute("carol", shlex.split("swanctl --terminate --ike home"))
+            # Deactivate IPSEC Connection
+            if pLvl > 3:
+                print("swanctl --terminate --ike home")
+            docker.execute("carol", shlex.split("swanctl --terminate --ike home"))
+        except:
+            if pLvl > 1:
+                print("Possible Error in IPSEC Loop")
 
         # Check timer if > max time break loop
         if time.perf_counter() - startrun_tic > max_run_time:
@@ -283,6 +304,10 @@ for i in trange(len(C_vals)):
         "." + "iter_" + str(ipsec_N) + ".log")
     docker.copy(("carol", "/var/log/charon.log"), LogName)
 
+     #Reload Settings which forces a new Charon Log File
+    docker.execute("carol", shlex.split("echo 'newlog' > /var/log/charon.log"))
+    docker.execute("carol", shlex.split("swanctl --reload-settings"))
+
     #print run stats and estimated remaining time
     total_time = time.perf_counter() - startrun_tic
     L1_time = time.perf_counter() - L1_tic
@@ -296,9 +321,7 @@ for i in trange(len(C_vals)):
     if time.perf_counter() - startrun_tic > max_run_time:
         break
 
-    #Erase Carol Charon Log File
-    
-    docker.execute("carol", shlex.split("echo 'newlog' > /var/log/charon.log"))
+   
     #docker.execute("carol", shlex.split("rm /var/log/charon.log"))
     #docker.execute("carol", shlex.split("touch /var/log/charon.log"))
 
