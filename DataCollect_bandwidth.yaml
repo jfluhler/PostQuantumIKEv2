@@ -1,22 +1,22 @@
 ---
-CoreConfig:
-  TC_Interations: 10
-  MaxTimeS: 3600
-  LocalPath: "/"
-  RemotePath: "/var/log/charon.log"
-  WiresharkLogs: true
-  WSRemotePath: "/var/log/"
-  WSLocalPath: "/"
-  MirrorMoon: true
-  PrintLevel: 1
-  compose_files: "./strongX509/pq-strongswan/docker-compose.yml"
-Carol_TC_Config:
-  Constraint1:
-    Type: tbf
-    Constraint: rate
-    Interface: eth0
-    StartRange: 1000
-    EndRange: 10
-    Units: kbit
-    Steps: 10
-    AddParams: burst 32kbit latency 100ms
+CoreConfig:           # Core configuration settings for the run.
+  TC_Interations: 10  # Number of times to form and teradown the IPsec tunnel, per TC setting.
+  MaxTimeS: 3600      # Maximum time to run the test in seconds.
+  LocalPath: "/"      # Local path to copy the logs to.
+  RemotePath: "/var/log/charon.log"   # Remote path to copy the log file from.
+  WiresharkLogs: false        # Capture Wireshark logs from Carol. 
+  WSRemotePath: "/var/log/"   # Remote path to copy the Wireshark logs from.
+  WSLocalPath: "/"            # Local path to copy the Wireshark logs to.
+  MirrorMoon: true            # Mirror the Carol's TC settings to Moon, eg bandwidth.
+  PrintLevel: 1               # Information Display Level for the run.
+  compose_files: "./strongX509/pq-strongswan/docker-compose.yml"  # Docker compose file location
+Carol_TC_Config:  # Carol's Traffic Control settings.
+  Constraint1:      # Constraint 1, this is the adjustable constraint.
+    Type: tbf           # Type of constraint, tbf for token bucket filter.
+    Constraint: rate    # Constraint to adjust, rate in this case.
+    Interface: eth0     # Interface to apply the constraint to.
+    StartRange: 1000    # Start range of the constraint.
+    EndRange: 10        # End range of the constraint.
+    Units: kbit         # Units of the constraint.
+    Steps: 10           # Number of steps to take between the start and end range.
+    AddParams: burst 32kbit latency 100ms     # Additional parameters to add to the constraint.
