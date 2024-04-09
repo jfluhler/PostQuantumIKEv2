@@ -1,0 +1,40 @@
+---
+CoreConfig:
+  TC_Interations: 1
+  MaxTimeS: 3600
+  LocalPath: "/"
+  RemotePath: "/var/log/charon.log"
+  WiresharkLogs: true
+  WSRemotePath: "/var/log/"
+  WSLocalPath: "/"
+  MirrorMoon: false
+  PrintLevel: 1
+  compose_files: "./strongX509/pq-strongswan/docker-compose.yml"
+Carol_TC_Config:
+  Constraint1:
+    Type: netem
+    Constraint: delay
+    Interface: eth0
+    StartRange: 1
+    EndRange: 200
+    Units: ms
+    Steps: 2
+    AddParams: ''
+  Constraint2:
+    Type: netem
+    Constraint: loss
+    Interface: eth0
+    StartRange: 0.1
+    Units: "%"
+    Steps: 1
+    AddParams: ''
+Moon_TC_Config:
+  Constraint1:
+    Type: netem
+    Constraint: delay
+    Interface: eth0
+    StartRange: 1
+    EndRange: 1000
+    Units: ms
+    Steps: 1
+    AddParams: ''

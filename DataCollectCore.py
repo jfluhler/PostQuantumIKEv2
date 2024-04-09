@@ -6,21 +6,31 @@ import subprocess
 import shlex
 import time
 import json
+import yaml
 import numpy as np
 from python_on_whales import DockerClient
 from tqdm import trange
 
-ConfigFile = "DataCollect_bandwidth.json"
+# ConfigFile = "DataCollect_bandwidth.json"
+ymlConfig = "DataCollect_bandwidth.yaml"
 
 ## IMPORT CONFIGURATION FILE
 # Open the JSON file
-with open('PostQuantumIKEv2/' + ConfigFile) as file:
-    JSONConfig = json.load(file)
+# with open('PostQuantumIKEv2/' + ConfigFile) as file:
+#     JSONConfig = json.load(file)
+
+# Open the YAML config file
+with open('PostQuantumIKEv2/' + ymlConfig) as file:
+    YAMLConfig = yaml.safe_load(file)
 
 # Breakup the JSON file into different dictionaries
-CoreConfig = JSONConfig.get('CoreConfig')
-CarolConfig = JSONConfig.get('Carol_TC_Config')
-MoonConfig = JSONConfig.get('Moon_TC_Config')
+# JCoreConfig = JSONConfig.get('CoreConfig')
+# JCarolConfig = JSONConfig.get('Carol_TC_Config')
+# JMoonConfig = JSONConfig.get('Moon_TC_Config')
+
+CoreConfig = YAMLConfig.get('CoreConfig')
+CarolConfig = YAMLConfig.get('Carol_TC_Config')
+MoonConfig = YAMLConfig.get('Moon_TC_Config')
 
 pLvl = CoreConfig['PrintLevel']
 
