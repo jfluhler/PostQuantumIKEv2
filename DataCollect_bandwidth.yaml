@@ -8,15 +8,15 @@ CoreConfig:           # Core configuration settings for the run.
   WSRemotePath: "/var/log/"   # Remote path to copy the Wireshark logs from.
   WSLocalPath: "/"            # Local path to copy the Wireshark logs to.
   MirrorMoon: true            # Mirror the Carol's TC settings to Moon, eg bandwidth.
-  PrintLevel: 1               # Information Display Level for the run.
+  PrintLevel: 2               # Information Display Level for the run.
   compose_files: "./strongX509/pq-strongswan/docker-compose.yml"  # Docker compose file location
 Carol_TC_Config:  # Carol's Traffic Control settings.
   Constraint1:      # Constraint 1, this is the adjustable constraint.
     Type: tbf           # Type of constraint, tbf for token bucket filter.
     Constraint: rate    # Constraint to adjust, rate in this case.
     Interface: eth0     # Interface to apply the constraint to.
-    StartRange: 1000    # Start range of the constraint.
-    EndRange: 10        # End range of the constraint.
+    StartRange: 15    # Start range of the constraint.
+    EndRange: 1        # End range of the constraint.
     Units: kbit         # Units of the constraint.
     Steps: 10           # Number of steps to take between the start and end range.
-    AddParams: burst 32kbit latency 100ms     # Additional parameters to add to the constraint.
+    AddParams: burst 15kbit latency 500ms     # Additional parameters to add to the constraint.
