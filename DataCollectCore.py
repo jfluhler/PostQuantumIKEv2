@@ -2,6 +2,7 @@
 
 # Import the required libraries
 import os
+import sys
 import subprocess
 import shlex
 import time
@@ -11,8 +12,13 @@ import numpy as np
 from python_on_whales import DockerClient
 from tqdm import trange
 
+if len(sys.argv) > 1:
+    ymlConfig = sys.argv[1]
+else:
+    ymlConfig = "DataCollect_baseline.yaml"
+
 # ConfigFile = "DataCollect_bandwidth.json"
-ymlConfig = "DataCollect_bandwidth.yaml"
+
 
 ## IMPORT CONFIGURATION FILE
 # Open the JSON file
@@ -120,7 +126,7 @@ if True == True:
     C_Min = 0
     C_Max = 0
     C_units = ''
-    C_steps = 0
+    C_steps = 1
     C_AddParams = ''
 
     M_ctype = ''
@@ -129,82 +135,86 @@ if True == True:
     M_Min = 0
     M_Max = 0
     M_units = ''
-    M_steps = 0
+    M_steps = 1
     M_AddParams = ''
 
-    # Assign starting TC Constrains to variables
-    for x, obj in CarolConfig.items():
-        # First Constraint should be the adjustable constraint
-        if x == 'Constraint1':
-            C_ctype = obj['Type']
-            C_constraint = obj['Constraint']
-            C_interface = obj['Interface']
-            C_Min = obj['StartRange']
-            C_Max = obj['EndRange']
-            C_units = obj['Units']
-            C_steps = obj['Steps']
-            if bool(obj['AddParams']):
-                C_AddParams = obj['AddParams']
+    tc_string = ''
 
-            # Build the tc command string
-            tc_string = ("tc qdisc " + "add" + " dev " + C_interface + " root " + C_ctype + " " +  
-                C_constraint + " " + str(C_Min) + C_units + " " + C_AddParams)
+    # if there are constraints in the Carol Config then add them
+    if bool(CarolConfig):
+        # Assign starting TC Constrains to variables
+        for x, obj in CarolConfig.items():
+            # First Constraint should be the adjustable constraint
+            if x == 'Constraint1':
+                C_ctype = obj['Type']
+                C_constraint = obj['Constraint']
+                C_interface = obj['Interface']
+                C_Min = obj['StartRange']
+                C_Max = obj['EndRange']
+                C_units = obj['Units']
+                C_steps = obj['Steps']
+                if bool(obj['AddParams']):
+                    C_AddParams = obj['AddParams']
 
-            if pLvl > 1:
-                print("Carol Starter Adjustable Constraint: " + tc_string)
-
-            # Execute the tc command    
-            docker.execute("carol", shlex.split(tc_string))
-
-            # If MirrorMoon is True then execute the same command on Moon
-            if CoreConfig['MirrorMoon'] == True:
-                docker.execute("moon", shlex.split(tc_string))
-
-        else:
-            # If there are additional static constraints listed
-            tmp_ctype = obj['Type']
-            tmp_constraint = obj['Constraint']
-            tmp_interface = obj['Interface']
-            tmp_Min = obj['StartRange']
-            tmp_units = obj['Units']
-            if bool(obj['AddParams']):
-                tmp_AddParams = obj['AddParams']
-            else:
-                tmp_AddParams = ''
-
-            
-            # Check the type of constraint
-            if tmp_ctype == C_ctype:
-                # If the constraint type is the same then we need to tack on the additional constraints to the primary constraint
-                # for example if we are using netem on both constraints (for example delay and loss)
-                # then we cannot add both. Instead we combine them into one command and update AddParams with the 
-                # additional constraints. Then we need replace the previous constraint
-                # tc qdisc replace dev eth0 root netem delay 200ms loss 10%
-                # Really the perefered placement for additional static constraints would be the the AddParams field.
-
-                C_AddParams = (C_AddParams + " " + tmp_constraint + " "  + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
-
-                if pLvl > 1:
-                    print("Warning: New Constraint Type is the same as the adjustable constraint:" + tmp_ctype)
-                tc_string = ("tc qdisc " + "replace" + " dev " + C_interface + " root " + C_ctype + " " +  
+                # Build the tc command string
+                tc_string = ("tc qdisc " + "add" + " dev " + C_interface + " root " + C_ctype + " " +  
                     C_constraint + " " + str(C_Min) + C_units + " " + C_AddParams)
-            else:
-                tc_string = ("tc qdisc add dev " + tmp_interface + " root " + tmp_ctype + " " + 
-                    tmp_constraint + " " + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
-            
-            
 
-            # Execute the tc command
-            docker.execute("carol", shlex.split(tc_string))
-            if pLvl > 1:
-                print("Carol Starter Constraint: " + tc_string)
-
-            # If MirrorMoon is True then execute the same command on Moon
-            if CoreConfig['MirrorMoon'] == True:
-                docker.execute("moon", shlex.split(tc_string))
                 if pLvl > 1:
-                    print("Carol Starter Constraint Mirrored on Moon:" + tc_string)
-            
+                    print("Carol Starter Adjustable Constraint: " + tc_string)
+
+                # Execute the tc command    
+                docker.execute("carol", shlex.split(tc_string))
+
+                # If MirrorMoon is True then execute the same command on Moon
+                if CoreConfig['MirrorMoon'] == True:
+                    docker.execute("moon", shlex.split(tc_string))
+
+            else:
+                # If there are additional static constraints listed
+                tmp_ctype = obj['Type']
+                tmp_constraint = obj['Constraint']
+                tmp_interface = obj['Interface']
+                tmp_Min = obj['StartRange']
+                tmp_units = obj['Units']
+                if bool(obj['AddParams']):
+                    tmp_AddParams = obj['AddParams']
+                else:
+                    tmp_AddParams = ''
+
+                
+                # Check the type of constraint
+                if tmp_ctype == C_ctype:
+                    # If the constraint type is the same then we need to tack on the additional constraints to the primary constraint
+                    # for example if we are using netem on both constraints (for example delay and loss)
+                    # then we cannot add both. Instead we combine them into one command and update AddParams with the 
+                    # additional constraints. Then we need replace the previous constraint
+                    # tc qdisc replace dev eth0 root netem delay 200ms loss 10%
+                    # Really the perefered placement for additional static constraints would be the the AddParams field.
+
+                    C_AddParams = (C_AddParams + " " + tmp_constraint + " "  + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
+
+                    if pLvl > 1:
+                        print("Warning: New Constraint Type is the same as the adjustable constraint:" + tmp_ctype)
+                    tc_string = ("tc qdisc " + "replace" + " dev " + C_interface + " root " + C_ctype + " " +  
+                        C_constraint + " " + str(C_Min) + C_units + " " + C_AddParams)
+                else:
+                    tc_string = ("tc qdisc add dev " + tmp_interface + " root " + tmp_ctype + " " + 
+                        tmp_constraint + " " + str(tmp_Min) + tmp_units + " " + tmp_AddParams)
+                
+                
+
+                # Execute the tc command
+                docker.execute("carol", shlex.split(tc_string))
+                if pLvl > 1:
+                    print("Carol Starter Constraint: " + tc_string)
+
+                # If MirrorMoon is True then execute the same command on Moon
+                if CoreConfig['MirrorMoon'] == True:
+                    docker.execute("moon", shlex.split(tc_string))
+                    if pLvl > 1:
+                        print("Carol Starter Constraint Mirrored on Moon:" + tc_string)
+                
 
     # Access Moon and add starting TC Constrains
     if bool(MoonConfig):
@@ -303,19 +313,20 @@ for i in trange(len(C_vals)):
     L1_tic = time.perf_counter()
 
     # Update Carol Constraints (change)
-    tc_string = ("tc qdisc change dev " + C_interface + " root " + C_ctype + " " + 
-        C_constraint + " " + str(C_vals[i]) + C_units + " " + C_AddParams)
+    if bool(CarolConfig):
+        tc_string = ("tc qdisc change dev " + C_interface + " root " + C_ctype + " " + 
+            C_constraint + " " + str(C_vals[i]) + C_units + " " + C_AddParams)
     
-    # Execute the tc command
-    docker.execute("carol", shlex.split(tc_string))
-    if pLvl > 2:
-        print("Updated Carol With: " + tc_string)
-
-    if CoreConfig['MirrorMoon'] == True:
-        # Update Moon Constraints (change) to match carol
-        docker.execute("moon", shlex.split(tc_string))
+        # Execute the tc command
+        docker.execute("carol", shlex.split(tc_string))
         if pLvl > 2:
-            print("Updated Moon With: " + tc_string)
+            print("Updated Carol With: " + tc_string)
+
+        if CoreConfig['MirrorMoon'] == True:
+            # Update Moon Constraints (change) to match carol
+            docker.execute("moon", shlex.split(tc_string))
+            if pLvl > 2:
+                print("Updated Moon With: " + tc_string)
 
 
     # START Single Constraint Function
@@ -369,9 +380,12 @@ for i in trange(len(C_vals)):
     # Create date_time string
     date_time = time.strftime("%Y%m%d_%H%M")
 
-    # create log file name
-    LogName = ("./charon." + date_time + "-" + C_constraint + "_" + str(C_vals[i]) + 
-        C_units + "-"+ "iter_" + str(ipsec_N) + ".log")
+    if bool(CarolConfig):
+        # create log file name
+        LogName = ("./charon-" + date_time + "-" + C_constraint + "_" + str(C_vals[i]) + 
+            C_units + "-"+ "iter_" + str(ipsec_N) + ".log")
+    else:
+        LogName = ("./charon." + date_time + "baseline_" + str(C_vals[i]) + "-iter_" + str(ipsec_N) + ".log")
     
     # Copy log file from Carol to local machine
     docker.copy(("carol", "/var/log/charon.log"), LogName)
