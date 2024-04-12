@@ -336,12 +336,12 @@ startrun_tic = time.perf_counter()
 
 
 # Calculate a linear range of values for Carol Constraint 1
-C_vals = np.linspace(C_Min, C_Max, C_steps)
+C_vals = np.round(np.linspace(C_Min, C_Max, C_steps), 2)
 
 if pLvl > 0:
     print(" -- Begin Constraint 1 Loop -- ")
 
-if pLvl > 1:
+if pLvl > 0:
     print("Total Planned Iterations: " + str(len(C_vals)))
     print("Planned Values for Carol Constraint " + str(C_vals))
 
