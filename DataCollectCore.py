@@ -446,7 +446,7 @@ for i in trange(len(C_vals)):
         print("Estimated Remaining Time: " + str(EstRemTime) + " seconds")
 
     #save run stats to file
-    file1 = open([LOG_LocalPath + "runstats.txt"],"a")
+    file1 = open((LOG_LocalPath + "runstats.txt"),"a")
     file1.writelines(LogName + "; " +
         "Additional Params: " + C_AddParams + "; tc_command: " + tc_string +
         "; IterationTime: " + str(L1_time) + " seconds" + 
