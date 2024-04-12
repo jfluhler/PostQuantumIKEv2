@@ -32,14 +32,9 @@ services:
     volumes:
       - ./carol:/etc/swanctl
       - ./strongswan.conf:/etc/strongswan.conf
-      - 4LOGS:/LOGVOL
     networks:
       internet:
          ipv4_address: 192.168.0.3
-          
-volumes:
-  4LOGS:
-    external: true 
     
 networks:
   internet:
