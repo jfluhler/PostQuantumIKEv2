@@ -75,9 +75,9 @@ else:
 
 # Define the remote path of the charon log files
 if bool(CoreConfig['RemotePath']):
-    LOG_LocalPath = CoreConfig['RemotePath']
+    RemotePath = CoreConfig['RemotePath']
 else:
-    LOG_LocalPath = "/var/log/charon.log"
+    RemotePath = "/var/log/charon.log"
 
 # Define the location and name of the Docker Compose File
 if bool(CoreConfig['compose_files']):
@@ -430,7 +430,7 @@ for i in trange(len(C_vals)):
         LogName = ("./charon-" + date_time + "baseline_" + str(C_vals[i]) + "-iter_" + str(ipsec_N) + ".log")
     
     # Copy log file from Carol to local machine
-    docker.copy(("carol", "/var/log/charon.log"), LogName)
+    docker.copy(("carol", RemotePath), LogName)
 
     #Reload Settings which forces a new Charon Log File
     docker.execute("carol", shlex.split("echo 'newlog' > /var/log/charon.log"))
@@ -446,7 +446,7 @@ for i in trange(len(C_vals)):
         print("Estimated Remaining Time: " + str(EstRemTime) + " seconds")
 
     #save run stats to file
-    file1 = open("runstats.txt","a")
+    file1 = open([LOG_LocalPath + "runstats.txt"],"a")
     file1.writelines(LogName + "; " +
         "Additional Params: " + C_AddParams + "; tc_command: " + tc_string +
         "; IterationTime: " + str(L1_time) + " seconds" + 
