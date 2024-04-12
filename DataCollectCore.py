@@ -343,7 +343,7 @@ if pLvl > 0:
 
 if pLvl > 0:
     print("Total Planned Iterations: " + str(len(C_vals)))
-    print("Planned Values for Carol Constraint " + str(C_vals))
+    print("Planned Values for Carol Constraint " + C_constraint + ": " + str(C_vals))
 
 #START Constraint 1 Loop
 for i in trange(len(C_vals)):
