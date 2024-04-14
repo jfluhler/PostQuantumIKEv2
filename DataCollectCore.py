@@ -33,7 +33,7 @@ from tqdm import trange
 if len(sys.argv) > 1:
     ymlConfig = sys.argv[1]
 else:
-    ymlConfig = "DataCollect_baseline.yaml"
+    ymlConfig = "./DataCollect_baseline.yaml"
     # ConfigFile = "DataCollect_bandwidth.json"
 
 
@@ -43,7 +43,7 @@ else:
 #     JSONConfig = json.load(file)
 
 # Open the YAML config file
-with open('PostQuantumIKEv2/' + ymlConfig) as file:
+with open(ymlConfig) as file:
     YAMLConfig = yaml.safe_load(file)
 
 # Breakup the JSON file into different dictionaries
@@ -55,7 +55,36 @@ CoreConfig = YAMLConfig.get('CoreConfig')
 CarolConfig = YAMLConfig.get('Carol_TC_Config')
 MoonConfig = YAMLConfig.get('Moon_TC_Config')
 
-pLvl = CoreConfig['PrintLevel']
+# Define the maximum run time
+if bool(CoreConfig['MaxTimeS']):
+    max_run_time = CoreConfig['MaxTimeS']
+else:
+    max_run_time = 3600  # 3600 seconds is 1 hour
+
+# Define the print level  
+if bool(CoreConfig['PrintLevel']): 
+    pLvl = CoreConfig['PrintLevel']
+else:
+    pLvl = 1
+
+# Define the local path to save the log files
+if bool(CoreConfig['LocalPath']):
+    LOG_LocalPath = CoreConfig['LocalPath']
+else:
+    LOG_LocalPath = "./"
+
+# Define the remote path of the charon log files
+if bool(CoreConfig['RemotePath']):
+    RemotePath = CoreConfig['RemotePath']
+else:
+    RemotePath = "/var/log/charon.log"
+
+# Define the location and name of the Docker Compose File
+if bool(CoreConfig['compose_files']):
+    DockerComposeFile = CoreConfig['compose_files']
+else:
+    DockerComposeFile = ["./strongX509/pq-strongswan/docker-compose.yml"]
+    
 
 if pLvl > 0:
     # Print the dictionary values
@@ -81,18 +110,14 @@ if pLvl > 0:
             for y in obj:
                 print("\t\t" + y + ':', obj[y])
 
-# Define the maximum run time
-if bool(CoreConfig['MaxTimeS']):
-    max_run_time = CoreConfig['MaxTimeS']
-else:
-    max_run_time = 3600  # 3600 seconds is 1 hour
+
 
 print("\n\n -----------------------------------------------")
 print("Max Run Time: " + str(max_run_time/60) + " minutes")
 print("----------------------------------------------- \n\n")
 
 # Define the Docker Client
-docker = DockerClient(compose_files=CoreConfig['compose_files'])
+docker = DockerClient(compose_files=DockerComposeFile)
 docker.compose.ps()
 
 ## SET TO FALSE IF DOCKER AND CHARON ARE ALREADY RUNNING
@@ -311,14 +336,14 @@ startrun_tic = time.perf_counter()
 
 
 # Calculate a linear range of values for Carol Constraint 1
-C_vals = np.linspace(C_Min, C_Max, C_steps)
+C_vals = np.round(np.linspace(C_Min, C_Max, C_steps), 2)
 
 if pLvl > 0:
     print(" -- Begin Constraint 1 Loop -- ")
 
-if pLvl > 1:
+if pLvl > 0:
     print("Total Planned Iterations: " + str(len(C_vals)))
-    print("Planned Values for Carol Constraint " + str(C_vals))
+    print("Planned Values for Carol Constraint " + C_constraint + ": " + str.replace(str(C_vals)," ",",") + "\n\n")
 
 #START Constraint 1 Loop
 for i in trange(len(C_vals)):
@@ -399,13 +424,13 @@ for i in trange(len(C_vals)):
 
     if bool(CarolConfig):
         # create log file name
-        LogName = ("./charon-" + date_time + "-" + C_constraint + "_" + str(C_vals[i]) + 
+        LogName = (LOG_LocalPath + "charon-" + date_time + "-" + C_constraint + "_" + str(C_vals[i]) + 
             C_units + "-"+ "iter_" + str(ipsec_N) + ".log")
     else:
-        LogName = ("./charon." + date_time + "baseline_" + str(C_vals[i]) + "-iter_" + str(ipsec_N) + ".log")
+        LogName = ("./charon-" + date_time + "baseline_" + str(C_vals[i]) + "-iter_" + str(ipsec_N) + ".log")
     
     # Copy log file from Carol to local machine
-    docker.copy(("carol", "/var/log/charon.log"), LogName)
+    docker.copy(("carol", RemotePath), LogName)
 
     #Reload Settings which forces a new Charon Log File
     docker.execute("carol", shlex.split("echo 'newlog' > /var/log/charon.log"))
@@ -421,7 +446,7 @@ for i in trange(len(C_vals)):
         print("Estimated Remaining Time: " + str(EstRemTime) + " seconds")
 
     #save run stats to file
-    file1 = open("runstats.txt","a")
+    file1 = open((LOG_LocalPath + "runstats.txt"),"a")
     file1.writelines(LogName + "; " +
         "Additional Params: " + C_AddParams + "; tc_command: " + tc_string +
         "; IterationTime: " + str(L1_time) + " seconds" + 
