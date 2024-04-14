@@ -136,7 +136,7 @@ if FreshRun == False:
     # Wait for the containers to start, probably not needed at all
     time.sleep(5)
 else:
-    docker.compose.restart()
+    print("Use Existing Containers") #docker.compose.restart()
 
 if True == True:
     # Access Carol & moon to enable qdisc
@@ -165,8 +165,8 @@ if True == True:
     C_ctype = ''
     C_constraint = ''
     C_interface = ''
-    C_Min = 0
-    C_Max = 0
+    C_Min = 1
+    C_Max = 1
     C_units = ''
     C_steps = 1
     C_AddParams = ''
@@ -174,8 +174,8 @@ if True == True:
     M_ctype = ''
     M_constraint = ''
     M_interface = ''
-    M_Min = 0
-    M_Max = 0
+    M_Min = 1
+    M_Max = 1
     M_units = ''
     M_steps = 1
     M_AddParams = ''
@@ -336,6 +336,7 @@ startrun_tic = time.perf_counter()
 
 
 # Calculate a linear range of values for Carol Constraint 1
+
 C_vals = np.round(np.linspace(C_Min, C_Max, C_steps), 2)
 
 if pLvl > 0:
